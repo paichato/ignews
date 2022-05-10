@@ -43,7 +43,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     if (relevantEvents.has(type)) {
       try {
         switch (type) {
-          case "checkoute.session.completed":
+          case "checkout.session.completed":
             const checkoutSession = event.data
               .object as Stripe.Checkout.Session;
             await saveSubscription(
