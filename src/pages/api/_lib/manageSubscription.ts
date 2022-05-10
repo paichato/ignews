@@ -3,4 +3,5 @@ export async function saveSubscription(
   customerId: string
 ) {
   //buscar dados do user na db
+  console.log(subscriptionId, customerId);
 }
